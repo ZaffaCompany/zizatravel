@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ziza Travel</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <div class="logo_item">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <a href="index.html" class="logo__media"><img src="img/logo-responsive.png" alt=""></a>
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+        </div>
+
+        <div class="navbar_content">
+            <ul>
+                <li class="nav__link1"><a href="index.html">Главная</a></li>
+                <li class="nav__link2"><a href="about.html">О нас</a> </li>
+                <li class="nav__link3"><a href="packages.html">Пакеты</a></li>
+                <li class="nav__link4"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <select>
+            <option value="RU">RU</option>
+            <option value="RU">UZ</option>
+            <option value="RU">EN</option>
+        </select>
+    </nav>
+    <div class="wrapper">
+        <div class="content">
+            <header class="book__header">
+
+                <!-- sidebar -->
+                <nav class="sidebar close">
+
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a> </li>
+                        <li><a href="#">Пакеты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+
+                    <select>
+                        <option value="RU">RU</option>
+                        <option value="RU">UZ</option>
+                        <option value="RU">EN</option>
+                    </select>
+                </nav>
+
+                <div class="about__title">
+                    <h1>Пакет Стамбул</h1>
+                </div>
+            </header>
+
+            <main>
+                <section class="book">
+                    <div class="container">
+                        <div class="book__tab">
+                            <div class="tabs__buttons--container">
+                                <button class="tabs__tab-btn" data-tab-id="info">Информация</button>
+                                <button class="tabs__tab-btn" data-tab-id="gallery">Галерея</button>
+                            </div>
+                        </div>
+
+                        <div data-tab="info" class="tabs__tab">
+                            <div class="book__block">
+                                <div class="book__content">
+                                    <span>Путешествие в</span> <span class="book__stanbul">Стамбул</span>
+                                    <div class="book__price">
+                                        <h2>
+                                            $600
+                                        </h2>
+                                        <h3>
+                                            на одного
+                                        </h3>
+                                    </div>
+
+                                    <div class="book__info">
+                                        <h4><i class="fa-solid fa-clock"></i> 11 День</h4>
+                                        <h4><i class="fa-solid fa-users"></i> Макс.Чел 12</h4>
+                                        <h4><i class="fa-solid fa-store"></i> Экскурсионный тур</h4>
+                                    </div>
+
+                                    <p>
+                                        Приготовьтесь к восхищению великолепной архитектурой Стамбула, богатой историей
+                                        и эклектичными базарами, когда вы откроете для себя неповторимые
+                                        достопримечательности Старого города во время этого 1-, 2- или 3-дневного
+                                        частного тура. Полюбуйтесь великолепным собором Святой Софии, узнайте, как
+                                        Голубая мечеть получила печально известное прозвище, и посмотрите древнюю
+                                        цистерну Базилики.
+                                    </p>
+
+                                    <div class="book__info-gallery">
+                                        <img data-enlargable src="img/stanbul-info-img1.png" alt="">
+                                        <img data-enlargable src="img/stanbul-info-img2.png" alt="">
+                                        <img data-enlargable src="img/stanbul-info-img3.png" alt="">
+                                    </div>
+
+                                </div>
+
+                                <div class="book__form">
+                                    <h1>Тип оплаты</h1>
+
+                                    <form>
+                                        <div class="inputbox">
+                                            <input type="text" required>
+                                            <span>Ф.И.О</span>
+                                            <i></i>
+                                        </div>
+
+                                        <div class="inputbox">
+                                            <input type="number" required>
+                                            <span>Номер телефона</span>
+                                            <i></i>
+                                        </div>
+
+                                        <select required>
+                                            <option>Число людей</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+
+                                        <div class="book__total">
+                                            <h2>$900</h2>
+                                            <h3>общая цена</h3>
+                                        </div>
+
+                                        <button>Оплата через <img src="img/click-pay.png" alt=""></button>
+                                        <button>Оплата через </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="book__details">
+                                <div class="book__details-info">
+                                    <h1>Место назначения:</h1>
+
+                                    <h2>Турция, Стамбул</h2>
+                                </div>
+
+                                <div class="book__details-info">
+                                    <h1>Прибытие:</h1>
+
+                                    <h2>10:30 утра на следующий день после вылета из Ташкента.</h2>
+                                </div>
+
+                                <div class="book__details-info">
+                                    <h1>Что входит в комплект:</h1>
+
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Услуги транспорта</li>
+                                        <li><i class="fa-solid fa-check"></i> Питание – завтрак и ужин</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Паломничества по святым местам</li>
+                                        <li><i class="fa-solid fa-check"></i> Красное море мелководное</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-tab="gallery" class="tabs__tab">
+                            <div class="gallery">
+                                <div class="gallery__content">
+
+                                    <div class="gallery__block">
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img3.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="gallery__block">
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img4.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img5.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img6.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="gallery__block">
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img7.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img8.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img data-enlargable src="img/stanbul-info-img9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="book__form">
+                                    <h1>Тип оплаты</h1>
+
+                                    <form>
+                                        <div class="inputbox">
+                                            <input type="text" required>
+                                            <span>Ф.И.О</span>
+                                            <i></i>
+                                        </div>
+
+                                        <div class="inputbox">
+                                            <input type="number" required>
+                                            <span>Номер телефона</span>
+                                            <i></i>
+                                        </div>
+
+                                        <select required>
+                                            <option>Число людей</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+
+                                        <div class="book__total">
+                                            <h2>$900</h2>
+                                            <h3>общая цена</h3>
+                                        </div>
+
+                                        <button>Оплата через <img src="img/click-pay.png" alt=""></button>
+                                        <button>Оплата через </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contacts">
+                    <div class="container">
+                        <div class="country__title">
+                            <h3 class="animate-up">Контакты</h3>
+
+                            <div class="country__line animate-up"></div>
+                        </div>
+
+                        <div class="contacts__content">
+                            <img src="img/contacts-img.png" class="contacts__img animate-up" alt="">
+                            <div class="contacts__form animate-up">
+                                <form>
+                                    <div class="inputbox">
+                                        <input type="text" required>
+                                        <span>Ф.И.О</span>
+                                        <i></i>
+                                    </div>
+
+                                    <div class="inputbox">
+                                        <input type="number" required>
+                                        <span>Номер телефона</span>
+                                        <i></i>
+                                    </div>
+
+                                    <div class="inputbox">
+                                        <input type="text" required>
+                                        <span>Сообщение</span>
+                                        <i></i>
+                                    </div>
+
+                                    <button>Отправить</button>
+                                </form>
+                            </div>
+
+                            <div class="contacts__info animate-up">
+                                <div class="contacts__info-title">
+                                    <div></div>
+                                    <h1>Связаться с нами</h1>
+                                </div>
+
+                                <h2>Уже убедились? Давайте путешествуем вместе.</h2>
+
+                                <div class="contacts__more">
+                                    <div class="contacts__communications">
+                                        <i class="fa-solid fa-location-dot"></i>
+
+                                        <div>
+                                            <h3>Адрес:</h3>
+                                            <h4>M. Shayxzoda ko'chasi, D-1</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="contacts__communications">
+                                        <i class="fa-solid fa-phone"></i>
+
+                                        <div>
+                                            <h3>Телефон:</h3>
+                                            <h4><a href="tel: +998909551991">+998 90 955 19 91</a></h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="contacts__communications">
+                                        <i class="fa-solid fa-user-tie"></i>
+
+                                        <div>
+                                            <h3>Директор:</h3>
+                                            <h4>Хамраева Азиза Лкхомовна</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__content animate-up">
+                        <div>
+                            <img src="img/logo-responsive.png" alt="">
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="packages.html" class="active">
+                                    Пакеты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <h1 class="copyrigth about-copyrigth animate-up">© 2023. Все авторские права принадлежат Zaffa
+                        Bussines</h1>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var nav = this.document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <!-- JQUERY -->
+    <script src="libs/jquery.js"></script>
+
+    <!-- GSAP -->
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollSmoother.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
+    <script src="js/gsapAnimation.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="libs/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/00796451d6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

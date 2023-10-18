@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ziza Travel</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <div class="logo_item">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <a href="index.html" class="logo__media"><img src="img/logo-responsive.png" alt=""></a>
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+        </div>
+
+        <div class="navbar_content">
+            <ul>
+                <li class="nav__link1"><a href="index.html">Главная</a></li>
+                <li class="nav__link2"><a href="about.html">О нас</a> </li>
+                <li class="nav__link3"><a href="packages.html">Пакеты</a></li>
+                <li class="nav__link4"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <select>
+            <option value="RU">RU</option>
+            <option value="RU">UZ</option>
+            <option value="RU">EN</option>
+        </select>
+    </nav>
+    <div class="wrapper">
+        <div class="content">
+            <header class="package__header">
+
+                <!-- sidebar -->
+                <nav class="sidebar close">
+
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a> </li>
+                        <li><a href="#">Пакеты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+
+                    <select>
+                        <option value="RU">RU</option>
+                        <option value="RU">UZ</option>
+                        <option value="RU">EN</option>
+                    </select>
+                </nav>
+
+                <div class="about__title">
+                    <h1>Пакеты</h1>
+
+                    <div>
+                        <a href="index.html">
+                            <h2>Главная > </h2>
+                        </a>
+                        <h3>Пакеты</h3>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+
+                <section class="country">
+                    <div class="container">
+                        <div class="country__title">
+                            <h3 class="animate-up">Пункты назначения для вас</h3>
+
+                            <div class="country__line animate-up"></div>
+                        </div>
+
+                        <span class="dropdown-el">
+                            <input type="radio" name="sortType" value="Relevance" checked="checked"
+                                id="sort-relevance"><label for="sort-relevance">Категория</label>
+                            <div class="tab-filter-container2 animate-up country__res-filter">
+
+                                <!-- TAB BTN 1 -->
+                                <li class="filter-btn2 active" data-tab="all">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                    Все
+                                </li>
+
+                                <!-- TAB BTN 2 -->
+                                <li class="filter-btn2" data-tab="turkia">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                    Турция
+                                </li>
+
+                                <!-- TAB BTN 3 -->
+                                <li class="filter-btn2" data-tab="thailand">
+                                    <ion-icon name="logo-nodejs"></ion-icon>
+                                    Тайланд
+                                </li>
+
+                                <!-- TAB BTN 4 -->
+                                <li class="filter-btn2" data-tab="uae">
+                                    <ion-icon name="diamond-outline"></ion-icon>
+                                    ОАЕ
+                                </li>
+
+                                <!-- TAB BTN 5 -->
+                                <li class="filter-btn2" data-tab="malaysia">
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    Молайзия
+                                </li>
+                            </div>
+                        </span>
+                        <div class="tab-container2">
+                            <div class="tab-filter-container2 animate-up country__filter">
+
+                                <!-- TAB BTN 1 -->
+                                <li class="filter-btn2 active" data-tab="all">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                    Все
+                                </li>
+
+                                <!-- TAB BTN 2 -->
+                                <li class="filter-btn2" data-tab="turkia">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                    Турция
+                                </li>
+
+                                <!-- TAB BTN 3 -->
+                                <li class="filter-btn2" data-tab="thailand">
+                                    <ion-icon name="logo-nodejs"></ion-icon>
+                                    Тайланд
+                                </li>
+
+                                <!-- TAB BTN 4 -->
+                                <li class="filter-btn2" data-tab="uae">
+                                    <ion-icon name="diamond-outline"></ion-icon>
+                                    ОАЕ
+                                </li>
+
+                                <!-- TAB BTN 5 -->
+                                <li class="filter-btn2" data-tab="malaysia">
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    Молайзия
+                                </li>
+                            </div>
+
+                            <div class="tab-filter-item-container2 animate-up">
+
+                                <!-- TAB CONTENT 1 -->
+                                <div class="tab-item2 all select_tab">
+                                    <!-- TAB CARD 1 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img1.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Турция, Станбул</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="book.html">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 2 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img2.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>ОАЭ, Дубай</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 3 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img3.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Малайзия, Куала Лумпур</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 4 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img4.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Тайланд, Бангог</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 1 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img1.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Турция, Станбул</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 2 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img2.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>ОАЭ, Дубай</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 3 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img3.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Малайзия, Куала Лумпур</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 4 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img4.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Тайланд, Бангог</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- TAB CONTENT 2 -->
+                                <div class="tab-item2 turkia">
+                                    <!-- TAB CARD 1 -->
+                                    <div>
+                                        <a href="book.html">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img1.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Турция, Станбул</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="book.html">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 2 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img2.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>ОАЭ, Дубай</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 3 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img3.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Малайзия, Куала Лумпур</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 4 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img4.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Тайланд, Бангог</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <!-- TAB CONTENT 3 -->
+                                <div class="tab-item2 thailand">
+                                    <!-- TAB CARD 1 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img1.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Турция, Станбул</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 2 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img2.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>ОАЭ, Дубай</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 3 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img3.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Малайзия, Куала Лумпур</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 4 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img4.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Тайланд, Бангог</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- TAB CONTENT 4 -->
+                                <div class="tab-item2 uae">
+                                    <!-- TAB CARD 1 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img1.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Турция, Станбул</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 2 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img2.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>ОАЭ, Дубай</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 3 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img3.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Малайзия, Куала Лумпур</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 4 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img4.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Тайланд, Бангог</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- TAB CONTENT 5 -->
+                                <div class="tab-item2 malaysia">
+                                    <!-- TAB CARD 1 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img1.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Турция, Станбул</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 2 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img2.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>ОАЭ, Дубай</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 3 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img3.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Малайзия, Куала Лумпур</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- TAB CARD 4 -->
+                                    <div>
+                                        <a href="#">
+                                            <div class="offers__card">
+                                                <img src="img/offer-img4.png" alt="">
+
+                                                <div class="offers__card-info">
+                                                    <h1>Тайланд, Бангог</h1>
+
+                                                    <div class="offers__card-price">
+                                                        <h2>$99.00</h2>
+                                                        <h3>Цена</h3>
+                                                    </div>
+
+                                                    <a href="#">
+                                                        <button>Забронировать</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contacts">
+                    <div class="container">
+                        <div class="country__title">
+                            <h3 class="animate-up">Контакты</h3>
+
+                            <div class="country__line animate-up"></div>
+                        </div>
+
+                        <div class="contacts__content">
+                            <img src="img/contacts-img.png" class="contacts__img animate-up" alt="">
+                            <div class="contacts__form animate-up">
+                                <form>
+                                    <div class="inputbox">
+                                        <input type="text" required>
+                                        <span>Ф.И.О</span>
+                                        <i></i>
+                                    </div>
+
+                                    <div class="inputbox">
+                                        <input type="number" required>
+                                        <span>Номер телефона</span>
+                                        <i></i>
+                                    </div>
+
+                                    <div class="inputbox">
+                                        <input type="text" required>
+                                        <span>Сообщение</span>
+                                        <i></i>
+                                    </div>
+
+                                    <button>Отправить</button>
+                                </form>
+                            </div>
+
+                            <div class="contacts__info animate-up">
+                                <div class="contacts__info-title">
+                                    <div></div>
+                                    <h1>Связаться с нами</h1>
+                                </div>
+
+                                <h2>Уже убедились? Давайте путешествуем вместе.</h2>
+
+                                <div class="contacts__more">
+                                    <div class="contacts__communications">
+                                        <i class="fa-solid fa-location-dot"></i>
+
+                                        <div>
+                                            <h3>Адрес:</h3>
+                                            <h4>M. Shayxzoda ko'chasi, D-1</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="contacts__communications">
+                                        <i class="fa-solid fa-phone"></i>
+
+                                        <div>
+                                            <h3>Телефон:</h3>
+                                            <h4><a href="tel: +998909551991">+998 90 955 19 91</a></h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="contacts__communications">
+                                        <i class="fa-solid fa-user-tie"></i>
+
+                                        <div>
+                                            <h3>Директор:</h3>
+                                            <h4>Хамраева Азиза Лкхомовна</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__content animate-up">
+                        <div>
+                            <img src="img/logo-responsive.png" alt="">
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="packages.html" class="active">
+                                    Пакеты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <h1 class="copyrigth about-copyrigth animate-up">© 2023. Все авторские права принадлежат Zaffa
+                        Bussines</h1>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var nav = this.document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <!-- JQUERY -->
+    <script src="libs/jquery.js"></script>
+
+    <!-- GSAP -->
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollSmoother.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
+    <script src="js/gsapAnimation.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="libs/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/00796451d6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
